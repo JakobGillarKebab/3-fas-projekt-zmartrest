@@ -73,7 +73,7 @@ class HealthMonitorSystem {
     required this.polarIdentifier,
   });
 
-  // Initialize connection to the Polar device
+  // Initialize connection to Polar device
   Future<void> initializePolarDevice() async {
     try {
       await polar.connectToDevice(polarIdentifier);
